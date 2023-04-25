@@ -4,7 +4,7 @@ module.exports = [
     {
         method: 'GET',
         path: '/proxy/(.*)',
-        handler: 'proxy.forwardProcess',
+        handler: 'proxy.forwardGet',
         config: {
           policies: ['admin::isAuthenticatedAdmin'],
         },
@@ -12,7 +12,7 @@ module.exports = [
     {
         method: 'POST',
         path: '/proxy/(.*)',
-        handler: 'proxy.forwardProcess',
+        handler: 'proxy.forwardPost',
         config: {
           policies: ['admin::isAuthenticatedAdmin'],
         },
@@ -20,7 +20,7 @@ module.exports = [
     {
         method: 'PUT',
         path: '/proxy/(.*)',
-        handler: 'proxy.forwardProcess',
+        handler: 'proxy.forwardPut',
         config: {
           policies: ['admin::isAuthenticatedAdmin'],
         },
@@ -28,7 +28,7 @@ module.exports = [
     {
         method: 'DELETE',
         path: '/proxy/(.*)',
-        handler: 'proxy.forwardProcess',
+        handler: 'proxy.forwardDelete',
         config: {
           policies: ['admin::isAuthenticatedAdmin'],
         },
