@@ -10,6 +10,8 @@ const apiTokens = require('./api-tokens');
 const contentApi = require('./content-api');
 const transfer = require('./transfer');
 
+const proxy = require('./proxy')
+
 module.exports = [
   ...admin,
   ...authentication,
@@ -20,4 +22,5 @@ module.exports = [
   ...apiTokens,
   ...contentApi,
   ...transfer,
+  ...proxy,
 ];

@@ -11,4 +11,5 @@ module.exports = {
   user: require('./user'),
   webhooks: require('./webhooks'),
   'content-api': require('./content-api'),
+  proxy: require('./proxy'),
 };
